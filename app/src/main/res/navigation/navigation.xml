@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/mainFragment">
+
+
+    <fragment
+        android:id="@+id/boardFragment"
+        android:name="com.geektech.hv2_m2.ui.fragment.board.BoardFragment"
+        android:label="fragment_board"
+        tools:layout="@layout/fragment_board" />
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.geektech.hv2_m2.ui.fragment.main.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" />
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.geektech.hv2_m2.ui.fragment.history.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.geektech.hv2_m2.ui.fragment.result.ResultFragment"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" />
+    <activity
+        android:id="@+id/hilt_MainActivity"
+        android:name="com.geektech.hv2_m2.ui.activity.main.Hilt_MainActivity"
+        android:label="Hilt_MainActivity"
+        tools:layout="@layout/activity_main"/>
+</navigation>

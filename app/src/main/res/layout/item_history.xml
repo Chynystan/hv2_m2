@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="@drawable/shape_for_rv"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:layout_margin="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/txt_me"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        android:textSize="26sp"
+        android:layout_margin="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/txt_you"
+        android:textSize="26sp"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:layout_marginVertical="20dp"
+        app:layout_constraintTop_toBottomOf="@id/txt_me"
+        app:layout_constraintEnd_toEndOf="@id/txt_me"
+        app:layout_constraintStart_toStartOf="@id/txt_me"
+        android:text="@string/you"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/img_plus"
+        android:src="@drawable/ic_baseline_add_24"
+        android:layout_marginStart="80dp"
+        app:layout_constraintStart_toEndOf="@id/txt_you"
+        app:layout_constraintBottom_toTopOf="@id/txt_you"
+        app:layout_constraintTop_toBottomOf="@id/txt_me"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+
+    <TextView
+        android:id="@+id/txt_result"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/img_plus"
+        android:text="@string/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
